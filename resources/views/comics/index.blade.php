@@ -8,6 +8,12 @@
     <div class="container">
 
         <h1>Vista: index</h1>
+
+        <div>
+            <button class="card mb-3 p-2">
+                <a href="{{ route('comics.create') }}">Add a new comic.</a>
+            </button>
+        </div>
         
         <table class="table">
             <thead>

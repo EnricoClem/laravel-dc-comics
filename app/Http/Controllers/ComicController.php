@@ -13,6 +13,10 @@ class ComicController extends Controller
         return view('comics.index', compact('comics'));
     }
 
+    public function create() {
+        return view('comics.create');
+    }
+
     public function show($title) {
         $comic = Comic::find($title);
         if($comic === null) {
