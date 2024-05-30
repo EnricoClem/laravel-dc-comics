@@ -13,7 +13,10 @@
             <div>
                 <h2>Add a new comic</h2>
             </div>
-            <form action="" method="POST">
+            <form action="{{ route('comics.store') }}" method="POST">
+
+                @csrf
+
                 <div class="mb-3">
                     <label for="title" class="form-label">Title</label>
                     <input type="text" name="title" class="form-control" id="title" placeholder="comic title">
@@ -42,7 +45,9 @@
                     <label for="type" class="form-label">Type</label>
                     <input type="text" name="type" class="form-control" id="type">
                 </div>
+
                 <button class="btn btn-primary">Crea</button>
+
             </form>
         </div>
     </section>
