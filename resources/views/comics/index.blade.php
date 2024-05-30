@@ -35,6 +35,7 @@
                         <td>
                             <div class="d-flex">
                                 <a href="{{ route('comics.edit',$comic) }}">Edit</a>
+                                <a class="ml-2 text-danger" href="{{ route('comics.destroy',$comic) }}">Delete</a>
                             </div>
                         </td>
                     </tr>

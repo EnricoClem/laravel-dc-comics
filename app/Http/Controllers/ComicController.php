@@ -35,8 +35,15 @@ class ComicController extends Controller
         return view('comics.edit', compact('comic'));
     }
 
-    public function upadate() {
-        
+    public function upadate(Request $request) {
+        $form_data = $request->all();
+        $comic->update($form_data);
+        return to_route('comics.show', $new_comic);
+    }
+
+    public function destroy(Comic $comic) {
+        $comic->delete();
+        return to_route('comics.index');
     }
 
 }
