@@ -32,6 +32,11 @@
                         <td>{{ $comic->price }}</td>
                         <td>{{ $comic->series }}</td>
                         <td>{{ $comic->sale_date }}</td>
+                        <td>
+                            <div class="d-flex">
+                                <a href="{{ route('comics.edit',$comic) }}">Edit</a>
+                            </div>
+                        </td>
                     </tr>
                 @endforeach
             </tbody>

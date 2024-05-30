@@ -35,4 +35,8 @@ class ComicController extends Controller
         return view('comics.edit', compact('comic'));
     }
 
+    public function upadate() {
+        
+    }
+
 }
